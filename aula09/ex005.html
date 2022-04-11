@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+
+    <style>
+    body{
+            background: rgb(224, 11, 11);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    .ovo{
+    border-top-right-radius: 125%;
+    border-top-left-radius: 125%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    width:40px; 
+    height: 50px;
+    background: yellow;
+    }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1> 
+    <p>Aqui vai o Resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <div class= "ovo"></div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0 ]
+         window.document.write('Está escrito assim: ' + p1.innerText)
+         var d = window.document.getElementById('msg')
+         d.style.background = 'green'
+         d.innerText = "Estou aguardando..."    
+    </script>
+</body>
+</html>
